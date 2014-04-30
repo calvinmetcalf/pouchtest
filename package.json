@@ -1,0 +1,18 @@
+{
+  "name": "pouchtest",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pouchdb": "pouchdb/pouchdb"
+  },
+  "devDependencies": {
+    "browserify": "~3.44.2",
+    "uglifyjs": "~2.3.6"
+    },
+  "scripts": {
+    "test": "browserify . -s PouchDB | uglifyjs -mc > bundle.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
